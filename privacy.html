@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Privacy Policy — Short From Above, Toronto Photography & Drone Services"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://shortfromabove.ca/privacy.html"/>
+<meta property="og:title" content="Privacy Policy | Short From Above"/>
+<meta property="og:description" content="How Short From Above collects, uses and protects your personal information. Toronto photography and drone services."/>
+<meta property="og:image" content="https://shortfromabove.ca/preview.jpg"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:site_name" content="Short From Above"/>
+<meta property="og:locale" content="en_CA"/>
+<title>Privacy Policy | Short From Above</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --navy:  #090F1A;
+    --navy2: #0D1520;
+    --navy3: #131E2E;
+    --fg:    #EDF0F4;
+    --fg2:   #8C9BAA;
+    --fg3:   #556070;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--navy);
+    color: var(--fg);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px; line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 6%;
+    background: rgba(9,15,26,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(237,240,244,0.06);
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px; font-weight: 400; font-style: italic;
+    letter-spacing: 2px; color: var(--fg); text-decoration: none;
+  }
+  .nav-back {
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--fg3); text-decoration: none;
+    display: flex; align-items: center; gap: 10px;
+    transition: color 0.3s;
+  }
+  .nav-back:hover { color: var(--fg); }
+  .nav-back::before { content: '←'; font-size: 13px; }
+
+  /* PAGE HEADER */
+  .page-hero {
+    padding: 160px 6% 80px;
+    border-bottom: 1px solid rgba(237,240,244,0.06);
+  }
+  .page-label {
+    font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--fg3); margin-bottom: 24px; font-weight: 300;
+  }
+  .page-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(52px, 8vw, 96px);
+    font-weight: 300; font-style: italic;
+    line-height: 1; color: var(--fg); margin-bottom: 28px;
+  }
+  .page-date {
+    font-size: 12px; color: var(--fg3);
+    letter-spacing: 1.5px; font-weight: 300;
+  }
+
+  /* INTRO */
+  .intro-box {
+    max-width: 720px; margin: 0 auto;
+    padding: 56px 6% 0;
+  }
+  .intro-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(20px, 2.5vw, 26px);
+    font-weight: 300; font-style: italic;
+    color: var(--fg2); line-height: 1.7;
+    padding-bottom: 56px;
+    border-bottom: 1px solid rgba(237,240,244,0.06);
+  }
+  .intro-text strong { color: var(--fg); font-style: normal; font-weight: 400; }
+
+  /* CONTENT */
+  .content-wrap {
+    max-width: 720px; margin: 0 auto;
+    padding: 0 6% 140px;
+  }
+  .section-block {
+    padding: 52px 0;
+    border-bottom: 1px solid rgba(237,240,244,0.06);
+    opacity: 0; transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  .section-block.visible { opacity: 1; transform: none; }
+  .section-block:last-child { border-bottom: none; }
+
+  .block-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px; font-style: italic;
+    color: var(--fg3); margin-bottom: 16px; letter-spacing: 2px;
+  }
+  .block-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 3vw, 38px);
+    font-weight: 300; font-style: italic;
+    color: var(--fg); margin-bottom: 24px; line-height: 1;
+  }
+  .block-body {
+    font-size: 15px; font-weight: 300;
+    color: var(--fg2); line-height: 1.9;
+  }
+  .block-body p { margin-bottom: 18px; }
+  .block-body p:last-child { margin-bottom: 0; }
+  .block-body ul { list-style: none; margin: 18px 0; }
+  .block-body ul li {
+    font-size: 14px; color: var(--fg2);
+    padding: 10px 0; border-bottom: 1px solid rgba(237,240,244,0.05);
+    display: flex; gap: 16px; align-items: flex-start; font-weight: 300;
+  }
+  .block-body ul li::before {
+    content: ''; width: 18px; height: 1px;
+    background: rgba(237,240,244,0.2);
+    flex-shrink: 0; margin-top: 11px;
+  }
+  .block-body a {
+    color: var(--fg); text-decoration: none;
+    border-bottom: 1px solid rgba(237,240,244,0.2);
+    transition: border-color 0.3s;
+  }
+  .block-body a:hover { border-color: rgba(237,240,244,0.6); }
+  .block-body strong { color: var(--fg); font-weight: 400; }
+  .block-body em { font-style: italic; color: var(--fg); }
+
+  /* FORM */
+  .privacy-form { margin-top: 44px; display: flex; flex-direction: column; gap: 24px; }
+  .privacy-contact-row {
+    display: flex; flex-direction: column; gap: 6px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(237,240,244,0.06);
+    border-bottom: 1px solid rgba(237,240,244,0.06);
+    margin-bottom: 8px;
+  }
+  .privacy-contact-label {
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--fg3); font-weight: 300;
+  }
+  .privacy-contact-value { font-size: 15px; font-weight: 300; color: var(--fg2); }
+  .privacy-contact-value a {
+    color: var(--fg); text-decoration: none;
+    border-bottom: 1px solid rgba(237,240,244,0.2);
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .form-group { display: flex; flex-direction: column; gap: 10px; }
+  .form-group label {
+    font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--fg3); font-weight: 400;
+  }
+  .form-group input, .form-group textarea {
+    background: transparent; border: none;
+    border-bottom: 1px solid rgba(237,240,244,0.1);
+    color: var(--fg); font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 300; padding: 12px 0;
+    outline: none; transition: border-color 0.3s;
+    -webkit-appearance: none; border-radius: 0;
+  }
+  .form-group input:focus, .form-group textarea:focus { border-bottom-color: rgba(237,240,244,0.5); }
+  .form-group textarea { resize: none; min-height: 110px; }
+  .privacy-submit {
+    background: transparent; color: var(--fg);
+    border: 1px solid rgba(237,240,244,0.2);
+    padding: 16px; font-family: 'DM Sans', sans-serif;
+    font-size: 10px; font-weight: 400;
+    letter-spacing: 3px; text-transform: uppercase;
+    cursor: pointer; width: 100%;
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .privacy-submit:hover { border-color: rgba(237,240,244,0.5); background: rgba(237,240,244,0.04); }
+  .form-msg { font-size: 13px; font-weight: 300; letter-spacing: 0.5px; margin-top: 4px; display: none; }
+  .form-msg.success { color: rgba(237,240,244,0.55); }
+  .form-msg.error { color: rgba(237,120,120,0.8); }
+  .form-msg a { color: inherit; }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy); padding: 36px 6%;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+    border-top: 1px solid rgba(237,240,244,0.07);
+  }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px; font-style: italic; color: var(--fg3); font-weight: 300;
+  }
+  .footer-copy { font-size: 11px; color: var(--fg3); opacity: 0.4; }
+  .footer-links { display: flex; gap: 28px; }
+  .footer-links a {
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--fg3); text-decoration: none; opacity: 0.4;
+    transition: opacity 0.2s;
+  }
+  .footer-links a:hover { opacity: 1; }
+
+  @media (max-width: 768px) {
+    nav { padding: 18px 5%; }
+    .page-hero { padding: 120px 5% 60px; }
+    .intro-box { padding: 48px 5% 0; }
+    .content-wrap { padding: 0 5% 100px; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; gap: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Short From Above</a>
+  <a href="index.html" class="nav-back">Back</a>
+</nav>
+
+<div class="page-hero">
+  <p class="page-label">Legal</p>
+  <h1 class="page-title">Privacy<br/>Policy</h1>
+  <p class="page-date">Last updated January 1, 2026 &nbsp;·&nbsp; Toronto, Ontario, Canada</p>
+</div>
+
+<div class="intro-box">
+  <p class="intro-text section-block">
+    <strong>The short version.</strong> We collect only what we need to respond to your inquiry and complete your shoot. We don't sell your data, we don't spam you, and we store your information securely.
+  </p>
+</div>
+
+<div class="content-wrap">
+
+  <div class="section-block">
+    <p class="block-num">01</p>
+    <h2 class="block-title">Who We Are</h2>
+    <div class="block-body">
+      <p>Short From Above is a professional photography, videography, and drone services company based in Toronto, Ontario, Canada. We provide visual content services for families, couples, trades professionals, and small businesses across the Greater Toronto Area.</p>
+      <p>For all privacy-related questions, reach us at <a href="mailto:info@shortfromabove.ca">info@shortfromabove.ca</a>.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="block-num">02</p>
+    <h2 class="block-title">Information We Collect</h2>
+    <div class="block-body">
+      <p>We only collect information you voluntarily provide. This includes:</p>
+      <ul>
+        <li>Your name and email address when you fill out our contact form</li>
+        <li>Your phone number if you choose to provide it</li>
+        <li>Details about your project or shoot requirements</li>
+        <li>Any photos or files you send us as references</li>
+        <li>Payment information processed securely through third-party providers — we never store your card details</li>
+      </ul>
+      <p>We do not collect any data automatically beyond standard web hosting logs which are retained briefly and used only for security and performance monitoring.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="block-num">03</p>
+    <h2 class="block-title">How We Use Your Information</h2>
+    <div class="block-body">
+      <p>Your information is used only to respond to your inquiry, schedule and coordinate your shoot, deliver your final photos or videos, process payment, and follow up after your session. We do not use your information for unsolicited marketing.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="block-num">04</p>
+    <h2 class="block-title">Your Photos & Content</h2>
+    <div class="block-body">
+      <ul>
+        <li>Your final edited photos and videos are stored securely for 30 days after delivery, then deleted</li>
+        <li>We will never share, sell, or license your photos to any third party without your written permission</li>
+        <li>If we would like to use your photos in our portfolio or on social media, we will always ask first</li>
+        <li>We will never post photos of children without clear parental permission</li>
+        <li>Before-and-after trade content used for marketing will only be posted with your approval</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="block-num">05</p>
+    <h2 class="block-title">Email Communications</h2>
+    <div class="block-body">
+      <p>All email communication is handled through Zoho Mail, a privacy-focused business email service. Your emails are transmitted and stored securely using industry-standard encryption. We do not sign you up for any newsletters or marketing lists without your explicit consent. Zoho Mail's privacy policy: <a href="https://www.zoho.com/privacy.html" target="_blank" rel="noopener">zoho.com/privacy.html</a>.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="block-num">06</p>
+    <h2 class="block-title">Third-Party Services</h2>
+    <div class="block-body">
+      <ul>
+        <li><strong>Zoho Mail</strong> — email communications</li>
+        <li><strong>Formspree</strong> — contact form submissions. Your data passes through Formspree's servers before reaching our inbox. Privacy policy at <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener">formspree.io/legal/privacy-policy</a></li>
+        <li><strong>Google Fonts</strong> — website typography (no personal data collected)</li>
+        <li><strong>Netlify</strong> — website hosting (standard server logs only)</li>
+        <li><strong>Google Business Profile</strong> — business listing and reviews</li>
+        <li><strong>Instagram / Meta</strong> — portfolio and social media presence</li>
+      </ul>
+      <p>We do not use advertising trackers, Facebook Pixel, Google Analytics, or any third-party data collection tools on this website.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="block-num">07</p>
+    <h2 class="block-title">Cookies</h2>
+    <div class="block-body">
+      <p>This website does not use cookies for tracking or analytics. The only cookies that may be set are technical session cookies from Netlify, which are strictly necessary for the website to function and do not track you personally. We do not use advertising cookies, remarketing pixels, or any form of cross-site tracking.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="block-num">08</p>
+    <h2 class="block-title">Data Retention</h2>
+    <div class="block-body">
+      <ul>
+        <li>Inquiry emails and project communications — kept for 2 years, then deleted</li>
+        <li>Invoice and payment records — kept for 7 years as required by Canadian tax law</li>
+        <li>Delivered photo and video files — kept for 30 days after delivery, then deleted</li>
+        <li>Any data you ask us to delete — removed within 30 days of your request</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="block-num">09</p>
+    <h2 class="block-title">Your Rights Under Canadian Law</h2>
+    <div class="block-body">
+      <p>As a Canadian business, we comply with the <em>Personal Information Protection and Electronic Documents Act (PIPEDA)</em> and applicable Ontario privacy legislation. You have the right to know what information we hold, request a copy, ask us to correct or delete it, withdraw consent at any time, and file a complaint with the Office of the Privacy Commissioner of Canada. Email us and we will respond within 30 days.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="block-num">10</p>
+    <h2 class="block-title">Changes to This Policy</h2>
+    <div class="block-body">
+      <p>We may update this Privacy Policy from time to time. When we do, we will update the date at the top of this page. We will not reduce your rights without clearly notifying you.</p>
+    </div>
+  </div>
+
+  <div class="section-block">
+    <p class="block-num">11</p>
+    <h2 class="block-title">Contact Us</h2>
+    <div class="block-body">
+      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your personal information, please reach out directly.</p>
+    </div>
+    <form class="privacy-form" id="privacyForm" action="https://formspree.io/f/xzdyyjlk" method="POST">
+      <input type="hidden" name="Form Type" value="Privacy Inquiry"/>
+      <div class="privacy-contact-row">
+        <span class="privacy-contact-label">Direct Email</span>
+        <span class="privacy-contact-value"><a href="mailto:info@shortfromabove.ca">info@shortfromabove.ca</a> — we respond within 30 days.</span>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name</label>
+          <input type="text" name="First Name" placeholder="John" required/>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" name="Last Name" placeholder="Smith" required/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="Email" placeholder="john@email.com" required/>
+      </div>
+      <div class="form-group">
+        <label>Your Request</label>
+        <textarea name="Message" placeholder="Data deletion, access request, correction..." required></textarea>
+      </div>
+      <button type="submit" class="privacy-submit" id="privacyBtn">Submit Request</button>
+      <p class="form-msg success" id="privacySuccess">✓ &nbsp;Request received — we will respond within 30 days as required by law.</p>
+      <p class="form-msg error" id="privacyError">Something went wrong — email us at <a href="mailto:info@shortfromabove.ca">info@shortfromabove.ca</a></p>
+    </form>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-logo">Short From Above</div>
+  <div class="footer-copy">© 2026 Short From Above · Toronto, Ontario</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</footer>
+
+<script>
+const privacyForm = document.getElementById('privacyForm');
+if (privacyForm) {
+  privacyForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('privacyBtn');
+    const success = document.getElementById('privacySuccess');
+    const error = document.getElementById('privacyError');
+    btn.textContent = 'Sending...';
+    btn.style.opacity = '0.5';
+    btn.disabled = true;
+    try {
+      const res = await fetch(privacyForm.action, {
+        method: 'POST', body: new FormData(privacyForm),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        privacyForm.reset();
+        success.style.display = 'block';
+        error.style.display = 'none';
+        btn.textContent = 'Submitted ✓';
+      } else throw new Error();
+    } catch {
+      error.style.display = 'block';
+      success.style.display = 'none';
+      btn.textContent = 'Submit Request';
+      btn.style.opacity = '1';
+      btn.disabled = false;
+    }
+  });
+}
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.section-block').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

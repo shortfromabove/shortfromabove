@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Short From Above — Professional photography, video and drone services in Toronto. Serving families, couples, trades and businesses."/>
+
+  <!-- Open Graph / WhatsApp / Facebook / iMessage preview -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://shortfromabove.ca"/>
+  <meta property="og:title" content="Short From Above | Toronto Photography & Drone"/>
+  <meta property="og:description" content="Professional photo, video and drone services in Toronto. For families, couples, trades and small businesses across the GTA."/>
+  <meta property="og:image" content="https://shortfromabove.ca/preview.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:site_name" content="Short From Above"/>
+  <meta property="og:locale" content="en_CA"/>
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Short From Above | Toronto Photography & Drone"/>
+  <meta name="twitter:description" content="Professional photo, video and drone services in Toronto. For families, couples, trades and small businesses across the GTA."/>
+  <meta name="twitter:image" content="https://shortfromabove.ca/preview.jpg"/>
+<title>Short From Above | Toronto Photography & Drone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --navy:   #090F1A;
+    --navy2:  #0D1520;
+    --navy3:  #131E2E;
+    --fg:     #EDF0F4;
+    --fg2:    #8C9BAA;
+    --fg3:    #556070;
+    --teal:   #00C9B1;
+    --white:  #FFFFFF;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--navy);
+    color: var(--fg);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-x: hidden;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 24px 6%;
+    background: linear-gradient(to bottom, rgba(9,15,26,0.96) 0%, transparent 100%);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; font-weight: 400;
+    letter-spacing: 6px; text-transform: uppercase;
+    color: var(--fg); text-decoration: none;
+    font-style: italic;
+  }
+  .nav-logo span { color: var(--fg); font-style: normal; }
+  .nav-links { display: flex; gap: 40px; list-style: none; }
+  .nav-links a {
+    color: var(--fg2); text-decoration: none;
+    font-size: 11px; letter-spacing: 2.5px; text-transform: uppercase;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover { color: var(--fg); }
+  .nav-cta {
+    border: 1px solid rgba(237,240,244,0.25) !important;
+    color: var(--fg) !important;
+    padding: 8px 22px;
+    font-weight: 400 !important;
+    letter-spacing: 2px !important;
+    transition: border-color 0.3s, color 0.3s !important;
+    background: transparent !important;
+  }
+  .nav-cta:hover {
+    border-color: var(--fg) !important;
+    color: var(--fg) !important;
+    background: rgba(237,240,244,0.05) !important;
+  }
+
+  /* ── HERO ── */
+  #hero {
+    position: relative; height: 100vh; min-height: 600px;
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0;
+    background: url('YOUR_HERO_PHOTO.jpg') center/cover no-repeat;
+    background-color: var(--navy2);
+    transform: scale(1.05);
+    transition: transform 8s ease-out;
+  }
+  .hero-bg::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(9,15,26,0.45) 0%,
+      rgba(9,15,26,0.25) 40%,
+      rgba(9,15,26,0.85) 100%
+    );
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    text-align: center; padding: 0 20px;
+    animation: fadeUp 1.4s ease both;
+  }
+  .hero-eyebrow {
+    font-size: 11px; letter-spacing: 5px; text-transform: uppercase;
+    color: var(--fg2); margin-bottom: 28px;
+    font-weight: 300;
+  }
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(72px, 13vw, 148px);
+    font-weight: 300;
+    line-height: 0.92;
+    letter-spacing: -1px;
+    color: var(--fg);
+    margin-bottom: 28px;
+  }
+  .hero-title em {
+    font-style: italic;
+    font-weight: 300;
+    color: var(--fg);
+    opacity: 0.55;
+  }
+  .hero-sub {
+    font-size: 15px; font-weight: 300;
+    color: var(--fg2); max-width: 400px; margin: 0 auto 44px;
+    letter-spacing: 0.3px; line-height: 1.9;
+  }
+  .hero-actions { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+
+  .btn-primary {
+    border: 1px solid rgba(237,240,244,0.5);
+    color: var(--fg);
+    padding: 14px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px; font-weight: 400;
+    letter-spacing: 3px; text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s, border-color 0.3s;
+    background: rgba(237,240,244,0.05);
+  }
+  .btn-primary:hover {
+    background: rgba(237,240,244,0.1);
+    border-color: var(--fg);
+  }
+  .btn-ghost {
+    border: 1px solid rgba(237,240,244,0.15);
+    color: var(--fg2);
+    padding: 14px 40px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px; font-weight: 400;
+    letter-spacing: 3px; text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s, border-color 0.3s;
+    background: transparent;
+  }
+  .btn-ghost:hover { border-color: rgba(237,240,244,0.4); color: var(--fg); }
+
+  .hero-scroll {
+    position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+    color: var(--fg3); font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    animation: bounce 2.5s infinite;
+  }
+  .hero-scroll-line {
+    width: 1px; height: 52px;
+    background: linear-gradient(to bottom, rgba(237,240,244,0.4), transparent);
+  }
+
+  /* ── STATS BAR ── */
+  /* ── TAGLINE BAR ── */
+  .tagline-bar {
+    display: flex; align-items: center; gap: 24px;
+    padding: 28px 6%;
+    border-bottom: 1px solid rgba(237,240,244,0.06);
+  }
+  .tagline-line { flex: 1; height: 1px; background: rgba(237,240,244,0.07); }
+  .tagline-text {
+    font-size: 10px; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--fg3); white-space: nowrap; font-weight: 300;
+  }
+
+  /* ── SECTIONS ── */
+  section { padding: 110px 6%; }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(48px, 6vw, 84px);
+    font-weight: 300; font-style: italic;
+    letter-spacing: -0.5px; line-height: 1.05;
+    color: var(--fg); margin-bottom: 24px;
+  }
+  .section-sub {
+    font-size: 15px; font-weight: 300; color: var(--fg2);
+    max-width: 480px; line-height: 1.9;
+  }
+
+  /* ── SERVICES ── */
+  #services { background: var(--navy); }
+  .services-intro { margin-bottom: 80px; }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1px; background: rgba(237,240,244,0.05);
+  }
+  .service-card {
+    background: var(--navy); padding: 56px 44px;
+    position: relative; overflow: hidden;
+    transition: background 0.4s; cursor: default;
+  }
+  .service-card::after {
+    content: ''; position: absolute; bottom: 0; left: 0;
+    width: 0; height: 1px;
+    background: rgba(237,240,244,0.25);
+    transition: width 0.6s ease;
+  }
+  .service-card:hover { background: var(--navy2); }
+  .service-card:hover::after { width: 100%; }
+  .service-num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 13px; font-style: italic;
+    color: var(--fg3); margin-bottom: 28px; letter-spacing: 2px;
+  }
+  .service-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px; font-weight: 300; font-style: italic;
+    color: var(--fg); margin-bottom: 16px; line-height: 1;
+  }
+  .service-desc {
+    font-size: 14px; font-weight: 300; color: var(--fg2);
+    line-height: 1.9; margin-bottom: 24px;
+  }
+  .service-list { list-style: none; }
+  .service-list li {
+    font-size: 12px; color: var(--fg3); padding: 8px 0;
+    border-bottom: 1px solid rgba(237,240,244,0.05);
+    display: flex; align-items: center; gap: 14px;
+    font-weight: 300; letter-spacing: 0.5px;
+  }
+  .service-list li::before {
+    content: ''; width: 18px; height: 1px;
+    background: rgba(237,240,244,0.2); flex-shrink: 0;
+  }
+
+  /* ── PORTFOLIO ── */
+  #portfolio { background: var(--navy2); padding: 12px 0 80px; }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 0 12px;
+  }
+  .portfolio-item {
+    overflow: hidden; position: relative;
+    background: var(--navy3); cursor: pointer;
+  }
+  /* Default — 9:16 portrait, 1 col */
+  .portfolio-item { grid-column: span 1; aspect-ratio: 9/16; }
+  /* Every 5th slot — full width 16:9, same pattern as slot 1-5 */
+  .portfolio-item:nth-child(5),
+  .portfolio-item:nth-child(10) { grid-column: span 4; aspect-ratio: 16/9; }
+  .portfolio-item img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: transform 0.9s ease; display: block;
+    filter: brightness(0.88) saturate(0.85);
+  }
+  .portfolio-item:hover img { transform: scale(1.04); filter: brightness(1) saturate(1); }
+  .portfolio-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(9,15,26,0.65) 0%, transparent 50%);
+    opacity: 0; transition: opacity 0.4s;
+    display: flex; align-items: flex-end; padding: 22px;
+  }
+  .portfolio-item:hover .portfolio-overlay { opacity: 1; }
+  .portfolio-overlay-text {
+    font-size: 10px; letter-spacing: 3px; text-transform: uppercase;
+    color: rgba(237,240,244,0.55); font-weight: 300;
+  }
+  .portfolio-placeholder {
+    width: 100%; height: 100%; min-height: 200px;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 12px;
+    background: var(--navy3); color: var(--fg3);
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+  }
+  .placeholder-icon { font-size: 16px; opacity: 0.15; }
+  .portfolio-cta { text-align: center; padding: 56px 6% 0; }
+
+  /* ── CLIENTS — editorial list ── */
+  #clients { background: var(--navy); padding: 110px 6%; }
+  .clients-intro { margin-bottom: 72px; }
+  .clients-list { display: flex; flex-direction: column; }
+  .client-row {
+    display: flex; align-items: baseline; gap: 32px;
+    padding: 30px 0; border-bottom: 1px solid rgba(237,240,244,0.07);
+  }
+  .client-row:first-of-type { border-top: 1px solid rgba(237,240,244,0.07); }
+  .client-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38px; font-weight: 300; font-style: italic;
+    color: var(--fg); min-width: 230px; line-height: 1;
+    transition: opacity 0.3s;
+  }
+  .client-row:hover .client-name { opacity: 0.5; }
+  .client-line { flex: 0 0 36px; height: 1px; background: rgba(237,240,244,0.12); }
+  .client-desc { font-size: 14px; color: var(--fg3); font-weight: 300; line-height: 1.8; }
+
+  /* ── CONTACT ── */
+  #contact {
+    background: var(--navy2);
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 100px; align-items: start; padding: 110px 6%;
+  }
+  .contact-details { margin-top: 48px; display: flex; flex-direction: column; }
+  .contact-link {
+    font-size: 14px; font-weight: 300; color: var(--fg2);
+    text-decoration: none; padding: 14px 0;
+    border-bottom: 1px solid rgba(237,240,244,0.06);
+    transition: color 0.3s; display: block; letter-spacing: 0.3px;
+  }
+  .contact-link:first-child { border-top: 1px solid rgba(237,240,244,0.06); }
+  .contact-link:hover { color: var(--fg); }
+  .contact-form { display: flex; flex-direction: column; gap: 20px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .form-group { display: flex; flex-direction: column; gap: 10px; }
+  .form-group label {
+    font-size: 10px; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--fg3); font-weight: 400;
+  }
+  .form-group input, .form-group select, .form-group textarea {
+    background: transparent; border: none;
+    border-bottom: 1px solid rgba(237,240,244,0.1);
+    color: var(--fg); font-family: 'DM Sans', sans-serif;
+    font-size: 15px; font-weight: 300; padding: 12px 0;
+    outline: none; transition: border-color 0.3s;
+    -webkit-appearance: none; border-radius: 0;
+  }
+  .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-bottom-color: rgba(237,240,244,0.5);
+  }
+  .form-group select option { background: var(--navy); }
+  .form-group textarea { resize: none; min-height: 100px; }
+  .form-submit {
+    background: transparent; color: var(--fg);
+    border: 1px solid rgba(237,240,244,0.2);
+    padding: 16px; font-family: 'DM Sans', sans-serif;
+    font-size: 10px; font-weight: 400;
+    letter-spacing: 3px; text-transform: uppercase;
+    cursor: pointer; width: 100%; margin-top: 4px;
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .form-submit:hover { border-color: rgba(237,240,244,0.5); background: rgba(237,240,244,0.04); }
+
+  /* ── INSTAGRAM ── */
+  #instagram {
+    background: var(--navy); padding: 110px 6%;
+    text-align: center; border-top: 1px solid rgba(237,240,244,0.06);
+  }
+  .insta-inner { display: inline-flex; flex-direction: column; align-items: center; gap: 20px; }
+  .insta-handle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(44px, 8vw, 92px);
+    font-weight: 300; font-style: italic;
+    color: var(--fg); text-decoration: none; letter-spacing: 1px;
+    transition: opacity 0.3s; display: block;
+  }
+  .insta-handle:hover { opacity: 0.5; }
+  .insta-sub {
+    color: var(--fg3); font-size: 10px;
+    letter-spacing: 4px; text-transform: uppercase; font-weight: 300;
+  }
+  .insta-btn {
+    border: 1px solid rgba(237,240,244,0.18); color: var(--fg2);
+    padding: 14px 40px; font-size: 10px; letter-spacing: 3px;
+    text-transform: uppercase; text-decoration: none; font-weight: 400;
+    transition: border-color 0.3s, color 0.3s;
+  }
+  .insta-btn:hover { border-color: rgba(237,240,244,0.4); color: var(--fg); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy); padding: 36px 6%;
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 16px;
+    border-top: 1px solid rgba(237,240,244,0.07);
+  }
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px; font-style: italic; color: var(--fg3); font-weight: 300;
+  }
+  .footer-copy { font-size: 11px; color: var(--fg3); opacity: 0.4; }
+  .footer-links { display: flex; gap: 28px; }
+  .footer-links a {
+    font-size: 10px; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--fg3); text-decoration: none; opacity: 0.4;
+    transition: opacity 0.2s;
+  }
+  .footer-links a:hover { opacity: 1; }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(32px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50%       { transform: translateX(-50%) translateY(8px); }
+  }
+  .reveal {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  /* ── MOBILE ── */
+  @media (max-width: 768px) {
+    nav { padding: 18px 5%; }
+    .nav-links { display: none; }
+    .tagline-bar { padding: 20px 5%; }
+    section { padding: 80px 5%; }
+    #contact { grid-template-columns: 1fr; gap: 56px; padding: 80px 5%; }
+    .form-row { grid-template-columns: 1fr; }
+    .portfolio-grid { grid-template-columns: repeat(2, 1fr); padding: 0 8px; gap: 8px; }
+    .portfolio-item { grid-column: span 1; aspect-ratio: 9/16; }
+    .portfolio-item:nth-child(5),
+    .portfolio-item:nth-child(10) { grid-column: span 2; aspect-ratio: 16/9; }
+    .client-row { flex-wrap: wrap; gap: 12px; }
+    .client-name { min-width: unset; width: 100%; }
+    .client-line { display: none; }
+    footer { flex-direction: column; text-align: center; gap: 20px; }
+  }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 22px; height: 1px; background: var(--fg); }
+  @media (max-width: 768px) { .hamburger { display: flex; } }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo"><em>Short From Above</em></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+  </ul>
+  <div class="hamburger" onclick="openMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg" id="heroBg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Toronto &nbsp;·&nbsp; Photography &nbsp;·&nbsp; Video &nbsp;·&nbsp; Drone</p>
+    <h1 class="hero-title"><em>Short</em><br/>From<br/><em>Above</em></h1>
+    <p class="hero-sub">We document your work, your family, and your business — from the ground and from the sky.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Let's Talk</a>
+      <a href="#portfolio" class="btn-ghost">See the Work</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- THIN DIVIDER WITH TAGLINE -->
+<div class="tagline-bar reveal">
+  <span class="tagline-line"></span>
+  <span class="tagline-text">Toronto · GTA Wide · Ground & Sky</span>
+  <span class="tagline-line"></span>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="services-intro reveal">
+    <h2 class="section-title"><em>Every angle.</em><br/>Every story.</h2>
+    <p class="section-sub">Professional photo and video for the people who build this city — and the families and businesses that make it home.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-num">01</div>
+      <div class="service-name">Photography</div>
+      <p class="service-desc">Sharp, cinematic stills short in a professional and fun manner. Every image tells the full story of your work, your brand, or your family.</p>
+      <ul class="service-list">
+        <li>Before &amp; after documentation</li>
+        <li>Family &amp; couple sessions</li>
+        <li>Product &amp; brand photography</li>
+      </ul>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">02</div>
+      <div class="service-name">Video</div>
+      <p class="service-desc">Cinematic content that makes clients stop scrolling. From project walkthroughs to business promos to family films.</p>
+      <ul class="service-list">
+        <li>Business promo videos</li>
+        <li>Project &amp; job site walkthroughs</li>
+        <li>Instagram Reels &amp; TikTok</li>
+        <li>Family films &amp; events</li>
+      </ul>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-num">03</div>
+      <div class="service-name">Drone</div>
+      <p class="service-desc">Breathtaking aerial coverage that gives your event, location, or story a perspective nobody else can offer.</p>
+      <ul class="service-list">
+        <li>Aerial event coverage</li>
+        <li>Outdoor &amp; landscape photography</li>
+        <li>Unique creative perspectives</li>
+        <li>Drone video for social media</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO — no title, just images -->
+<section id="portfolio">
+  <div class="portfolio-grid">
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177033/1_cjzmtn.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177033/2_yhzata.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177033/3_nhhdfl.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177033/4_ovnncg.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177033/5_y2tqb7.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177034/6_iibxdb.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177034/7_johcmc.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177034/8_otowb5.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177036/9_atuv7z.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177009/10_fjhull.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177036/11_wy1nrh.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177035/12_y2cics.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177037/13_khdrbk.jpg" alt="Short From Above"/></div>
+    <div class="portfolio-item"><img src="https://res.cloudinary.com/dddgjguhe/image/upload/q_auto/f_auto/v1778177037/14_drrrgz.jpg" alt="Short From Above"/></div>
+  </div>
+  <div class="portfolio-cta reveal">
+    <a href="https://www.instagram.com/shortfromabove?igsh=MWRzZ2N0cnF1ZzlhMw==" target="_blank" class="btn-ghost">See more on Instagram</a>
+  </div>
+</section>
+
+<!-- WHO WE SERVE — editorial list style -->
+<section id="clients">
+  <div class="clients-intro reveal">
+    <h2 class="section-title"><em>Made for</em><br/>everyone.</h2>
+  </div>
+  <div class="clients-list">
+    <div class="client-row reveal">
+      <span class="client-name">Trades</span>
+      <span class="client-line"></span>
+      <span class="client-desc">Plumbers, carpenters, tilers, mechanics, floor installers — let your work get you the next job.</span>
+    </div>
+    <div class="client-row reveal">
+      <span class="client-name">Families</span>
+      <span class="client-line"></span>
+      <span class="client-desc">Real moments, real light. No forced poses. Just your family the way they actually are.</span>
+    </div>
+    <div class="client-row reveal">
+      <span class="client-name">Couples</span>
+      <span class="client-line"></span>
+      <span class="client-desc">Engagements, weddings, anniversaries. You planned every detail — document it at the same level.</span>
+    </div>
+    <div class="client-row reveal">
+      <span class="client-name">Small Business</span>
+      <span class="client-line"></span>
+      <span class="client-desc">Your phone photos are costing you customers. Professional visuals for restaurants, shops and studios.</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-left reveal">
+    <h2 class="section-title"><em>Let's make<br/>something<br/>great.</em></h2>
+    <p class="section-sub">Based in Toronto. Available across the GTA. We'll get back to you within 24 hours.</p>
+    <div class="contact-details">
+      <a href="mailto:info@shortfromabove.ca" class="contact-link">info@shortfromabove.ca</a>
+      <a href="https://www.instagram.com/shortfromabove?igsh=MWRzZ2N0cnF1ZzlhMw==" target="_blank" class="contact-link">@shortfromabove</a>
+      <span class="contact-link">Toronto, Ontario · GTA Wide</span>
+    </div>
+  </div>
+  <div class="contact-right reveal">
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xzdyyjlk" method="POST">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="First Name" placeholder="John" required/>
+        </div>
+        <div class="form-group">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="Last Name" placeholder="Smith" required/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="Email" placeholder="john@email.com" required/>
+      </div>
+      <div class="form-group">
+        <label for="service">What do you need?</label>
+        <select id="service" name="Service">
+          <option value="">Select a service...</option>
+          <option>Trades / Before &amp; After</option>
+          <option>Family Session</option>
+          <option>Couples / Engagement</option>
+          <option>Small Business</option>
+          <option>Drone / Aerial</option>
+          <option>Video Production</option>
+          <option>Something Else</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Tell us more</label>
+        <textarea id="message" name="Message" placeholder="Project details, preferred dates, location..."></textarea>
+      </div>
+      <button type="submit" class="form-submit">Send Message</button>
+      <div id="formSuccess" style="display:none; margin-top:20px; font-size:13px; color:rgba(237,240,244,0.6); letter-spacing:1px;">
+        ✓ &nbsp;Message sent — we'll be in touch within 24 hours.
+      </div>
+      <div id="formError" style="display:none; margin-top:20px; font-size:13px; color:rgba(237,120,120,0.8); letter-spacing:0.5px;">
+        Something went wrong — email us at <a href="mailto:info@shortfromabove.ca" style="color:inherit;">info@shortfromabove.ca</a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section id="instagram">
+  <div class="insta-inner reveal">
+    <a href="https://www.instagram.com/shortfromabove?igsh=MWRzZ2N0cnF1ZzlhMw==" target="_blank" class="insta-handle"><em>@shortfromabove</em></a>
+    <p class="insta-sub">Toronto photography, video and drone — updated weekly</p>
+    <a href="https://www.instagram.com/shortfromabove?igsh=MWRzZ2N0cnF1ZzlhMw==" target="_blank" class="insta-btn">Follow on Instagram</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><em>Short From Above</em></div>
+  <div class="footer-copy">© 2026 Short From Above · Toronto</div>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#portfolio">Work</a>
+    <a href="#contact">Contact</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+</footer>
+
+<script>
+function openMenu() {
+  const nl = document.querySelector('.nav-links');
+  nl.style.cssText = 'display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(9,15,26,0.98);justify-content:center;align-items:center;gap:36px;z-index:200;font-size:20px;';
+}
+document.querySelectorAll('.nav-links a').forEach(a => {
+  a.addEventListener('click', () => document.querySelector('.nav-links').removeAttribute('style'));
+});
+
+// Formspree
+const form = document.getElementById('contactForm');
+if (form) {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('.form-submit');
+    const success = document.getElementById('formSuccess');
+    const error = document.getElementById('formError');
+    btn.textContent = 'Sending...';
+    btn.style.opacity = '0.5';
+    btn.disabled = true;
+    try {
+      const res = await fetch(form.action, { method:'POST', body:new FormData(form), headers:{'Accept':'application/json'} });
+      if (res.ok) { form.reset(); success.style.display='block'; error.style.display='none'; btn.textContent='Sent ✓'; }
+      else throw new Error();
+    } catch { error.style.display='block'; success.style.display='none'; btn.textContent='Send Message'; btn.style.opacity='1'; btn.disabled=false; }
+  });
+}
+
+window.onbeforeunload = () => window.scrollTo(0,0);
+window.addEventListener('load', () => window.scrollTo({top:0,behavior:'instant'}));
+
+const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:0.08});
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+window.addEventListener('scroll', () => {
+  const bg = document.getElementById('heroBg');
+  if (bg) bg.style.transform = `scale(1.05) translateY(${window.scrollY * 0.18}px)`;
+});
+</script>
+</body>
+</html>
